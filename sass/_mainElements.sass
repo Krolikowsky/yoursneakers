@@ -1,0 +1,53 @@
+@import "./_colors"
+
+$borderRadius: 20px
+$paddingButton: 12px 24px
+$font: 'DM Sans', sans-serif
+
+.headingOne
+    color: $black
+    font-weight: 700
+    font-size: 3.5rem
+    line-height: 3.5rem
+    letter-spacing: -3%
+    font-family: $font
+    padding: 20px 0px
+
+.paragraph
+    font-family: $font
+    font-weight: 400
+    font-size: 1.8rem
+    line-height: 2.8rem
+
+.buttonDark
+    background-color: $secondBlack
+    color: $white
+    font-family: $font
+    font-weight: 700
+    font-size: 1.8rem
+    line-height: 2.8rem
+    padding: $paddingButton
+    border-radius: $borderRadius
+    border: 1px solid $secondBlack
+
+@media screen and (min-width: 700px)
+
+    .headingOne
+        font-size: 4.5rem
+        line-height: 4.5rem
+        padding: 20px 20vw
+
+    .paragraph
+        font-size: 2rem
+        line-height: 3rem
+
+    .buttonDark
+        font-size: 2rem
+        line-height: 3rem
+
+@media screen and (min-width: 992px)
+
+    .headingOne
+        font-size: 6.8rem
+        line-height: 6.8rem
+        padding: 20px 30vw
