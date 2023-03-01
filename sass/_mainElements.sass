@@ -1,8 +1,16 @@
 @import "./_colors"
 
+$borderRadiusButton: 40px
 $borderRadius: 20px
 $paddingButton: 12px 24px
 $font: 'DM Sans', sans-serif
+$padding: 50px 20px
+$paddingHeading: 20px 0px
+$marginElements: 20px 0px
+$paddingElements: 20px 0px
+
+.section
+    padding: $padding
 
 .headingOne
     color: $black
@@ -11,7 +19,25 @@ $font: 'DM Sans', sans-serif
     line-height: 3.5rem
     letter-spacing: -3%
     font-family: $font
-    padding: 20px 0px
+    padding: $paddingHeading
+
+.headingTwo
+    color: $black
+    font-weight: 700
+    font-size: 3rem
+    line-height: 3rem
+    letter-spacing: -3%
+    font-family: $font
+    padding: $paddingHeading
+
+.headingThree
+    color: $black
+    font-weight: 700
+    font-size: 2.5rem
+    line-height: 2.5rem
+    letter-spacing: -3%
+    font-family: $font
+    padding: $paddingHeading
 
 .paragraph
     font-family: $font
@@ -27,8 +53,11 @@ $font: 'DM Sans', sans-serif
     font-size: 1.8rem
     line-height: 2.8rem
     padding: $paddingButton
-    border-radius: $borderRadius
+    border-radius: $borderRadiusButton
     border: 1px solid $secondBlack
+
+.wrapper
+    width: 100%
 
 @media screen and (min-width: 700px)
 
@@ -36,6 +65,10 @@ $font: 'DM Sans', sans-serif
         font-size: 4.5rem
         line-height: 4.5rem
         padding: 20px 20vw
+
+    .headingTwo
+        font-size: 4rem
+        line-height: 4rem
 
     .paragraph
         font-size: 2rem
@@ -51,3 +84,15 @@ $font: 'DM Sans', sans-serif
         font-size: 6.8rem
         line-height: 6.8rem
         padding: 20px 30vw
+
+    .headingTwo
+        font-size: 5rem
+        line-height: 6rem
+
+    .section
+        width: 100vw
+
+    .wrapper
+        width: calc(100vw - 40px)
+        margin: 0 auto
+        max-width: 1600px
