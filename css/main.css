@@ -45,6 +45,16 @@
   padding: 20px 0px;
 }
 
+.headingFour {
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  letter-spacing: -3%;
+  font-family: "DM Sans", sans-serif;
+  padding: 20px 0px;
+}
+
 .paragraph {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -55,6 +65,18 @@
 .buttonDark {
   background-color: #131313;
   color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 12px 24px;
+  border-radius: 40px;
+  border: 1px solid #131313;
+}
+
+.buttonWhite {
+  background-color: #FFFFFF;
+  color: #131313;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
@@ -83,6 +105,10 @@
     line-height: 3rem;
   }
   .buttonDark {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .buttonWhite {
     font-size: 2rem;
     line-height: 3rem;
   }
@@ -140,6 +166,16 @@
   padding: 20px 0px;
 }
 
+.headingFour {
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  letter-spacing: -3%;
+  font-family: "DM Sans", sans-serif;
+  padding: 20px 0px;
+}
+
 .paragraph {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -150,6 +186,18 @@
 .buttonDark {
   background-color: #131313;
   color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 12px 24px;
+  border-radius: 40px;
+  border: 1px solid #131313;
+}
+
+.buttonWhite {
+  background-color: #FFFFFF;
+  color: #131313;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
@@ -178,6 +226,10 @@
     line-height: 3rem;
   }
   .buttonDark {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .buttonWhite {
     font-size: 2rem;
     line-height: 3rem;
   }
@@ -309,6 +361,44 @@
   order: 2;
 }
 
+.pricingTable {
+  background-color: #F6F1ED;
+}
+.pricingTable__topTextBox {
+  text-align: center;
+}
+.pricingTable__price {
+  padding: 0px 0px 20px 0px;
+}
+.pricingTable__iconRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.pricingTable__icon {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
+}
+.pricingTable__bottomBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.pricingTable__secondButton {
+  margin-top: 10px;
+}
+.pricingTable__columnPrice {
+  margin-top: 50px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 32px 18px;
+}
+
 @media screen and (min-width: 700px) {
   .headerHomePage__centerBlob {
     padding: 150px 20px;
@@ -348,6 +438,24 @@
   }
   .effectSection__imageBox {
     width: 48%;
+  }
+  .pricingTable__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .pricingTable__columnPrice {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pricingTable__iconRow {
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .pricingTable__icon {
+    margin-top: 5px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -393,6 +501,22 @@
   }
   .effectSection__descriptionBox--second {
     margin: 50px 50px 50px 20px;
+  }
+  .pricingTable__row {
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  .pricingTable__columnPrice {
+    width: 32%;
+    padding: 32px;
+  }
+  .pricingTable__icon {
+    margin-right: 10px;
+  }
+  .pricingTable__topTextBox {
+    max-width: 40vw;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1600px) {
