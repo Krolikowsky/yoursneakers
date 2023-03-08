@@ -112,6 +112,12 @@
 .pricingTable
     background-color: $beige
 
+    &__row
+        display: flex
+        flex-wrap: nowrap
+        width: 300vw
+        transition: 0.3s
+
     &__topTextBox
         text-align: center
 
@@ -145,3 +151,52 @@
         background-color: $white
         border-radius: $borderRadius
         padding: 32px 18px
+        margin-right: 20px
+        width: calc(100vw - 40px)
+
+    &__circle
+        width: 20px
+        height: 20px
+        border: 1px solid $black
+        border-radius: 50%
+        margin: 20px 10px
+
+        &--active
+            background-color: $black
+            transition: 0.3s
+
+    &__boxWithCircle
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+.aboutUs
+    background-color: $beige
+
+    &__image
+        width: 100%
+        border-radius: $borderRadius
+
+    &__rowTop
+        position: relative
+
+    &__iconEco
+        width: 70px
+        height: 70px
+        position: relative
+        left: 81%
+        top: 40px
+
+    &__rightSide
+        padding: $paddingElements
+
+    &__textBoxHeading
+        display: flex
+        align-content: center
+        align-items: center
+
+    &__icon
+        margin-right: 10px
+
+    &__textBox
+        padding: $paddingElements
