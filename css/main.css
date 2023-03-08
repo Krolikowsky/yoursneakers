@@ -364,6 +364,12 @@
 .pricingTable {
   background-color: #F6F1ED;
 }
+.pricingTable__row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 300vw;
+  transition: 0.3s;
+}
 .pricingTable__topTextBox {
   text-align: center;
 }
@@ -397,6 +403,56 @@
   background-color: #FFFFFF;
   border-radius: 20px;
   padding: 32px 18px;
+  margin-right: 20px;
+  width: calc(100vw - 40px);
+}
+.pricingTable__circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin: 20px 10px;
+}
+.pricingTable__circle--active {
+  background-color: #000000;
+  transition: 0.3s;
+}
+.pricingTable__boxWithCircle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutUs {
+  background-color: #F6F1ED;
+}
+.aboutUs__image {
+  width: 100%;
+  border-radius: 20px;
+}
+.aboutUs__rowTop {
+  position: relative;
+}
+.aboutUs__iconEco {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 81%;
+  top: 40px;
+}
+.aboutUs__rightSide {
+  padding: 20px 0px;
+}
+.aboutUs__textBoxHeading {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.aboutUs__icon {
+  margin-right: 10px;
+}
+.aboutUs__textBox {
+  padding: 20px 0px;
 }
 
 @media screen and (min-width: 700px) {
@@ -443,12 +499,15 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 30px 0px;
   }
   .pricingTable__columnPrice {
     width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 20px 0px;
   }
   .pricingTable__iconRow {
     align-content: flex-start;
@@ -456,6 +515,31 @@
   }
   .pricingTable__icon {
     margin-top: 5px;
+  }
+  .pricingTable__boxWithCircle {
+    display: none;
+  }
+  .aboutUs__rowBottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .aboutUs__leftSideHeading {
+    width: 100%;
+  }
+  .aboutUs__rightSideTextBoxs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .aboutUs__textBox {
+    width: 47%;
+  }
+  .aboutUs__iconEco {
+    width: 100px;
+    height: 100px;
+    left: 87%;
+    top: 50px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -504,7 +588,7 @@
   }
   .pricingTable__row {
     width: calc(100vw - 40px);
-    margin: 0 auto;
+    margin: 50px auto 0px;
     max-width: 1300px;
   }
   .pricingTable__columnPrice {
@@ -517,6 +601,47 @@
   .pricingTable__topTextBox {
     max-width: 40vw;
     margin: 0 auto;
+  }
+  .aboutUs__wrapper {
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+  .aboutUs__rowTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .aboutUs__iconEco {
+    width: 100px;
+    height: 100px;
+    left: 93%;
+    top: 45px;
+  }
+  .aboutUs__leftSide {
+    width: 50%;
+    padding-right: 50px;
+  }
+  .aboutUs__rightSide {
+    width: 40%;
+    padding-top: 100px;
+  }
+  .aboutUs__rowBottom {
+    margin-top: 70px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .aboutUs__leftSideHeading {
+    width: 30%;
+  }
+  .aboutUs__rightSideTextBoxs {
+    width: 60%;
+  }
+  .aboutUs__icon {
+    margin-right: 15px;
   }
 }
 @media screen and (min-width: 1600px) {
