@@ -136,6 +136,41 @@
         &__rightBox
             width: 60%
 
+    .howClean
+        position: relative
+
+        &__wrapper
+            width: calc(100vw - 40px)
+            margin: 0 auto
+            max-width: 1600px
+            justify-content: space-between
+
+        &__leftSideText
+            width: 30%
+
+        &__rightSideImages
+            width: 40%
+            height: 60vh
+            margin-right: 10%
+
+        &__image
+            height: 60vh
+
+        &__arrow
+            display: block
+            position: absolute
+            right: 3%
+            top: 30%
+            z-index: 100
+
+        &__circle
+            display: block
+            position: absolute
+            right: 60%
+            top: 70%
+            z-index: 100
+            animation: rotate180 3s infinite
+
             
 
 @media screen and (min-width: 1600px)

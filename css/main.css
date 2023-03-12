@@ -501,6 +501,51 @@
   transform: rotate(180deg);
 }
 
+.howClean__number {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.howClean__row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.howClean__rightSideImages {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin: 20px 0px;
+}
+.howClean__image {
+  position: absolute;
+  width: 100%;
+  transition: 0.3s;
+}
+.howClean__arrow {
+  display: none;
+}
+.howClean__circle {
+  display: none;
+}
+
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 @media screen and (min-width: 700px) {
   .headerHomePage__centerBlob {
     padding: 150px 20px;
@@ -586,6 +631,20 @@
     height: 100px;
     left: 87%;
     top: 50px;
+  }
+  .howClean__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  .howClean__leftSideText {
+    width: 50%;
+    margin-right: 50px;
+  }
+  .howClean__rightSideImages {
+    width: 50%;
+    margin: 0px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -708,6 +767,41 @@
   }
   .faq__rightBox {
     width: 60%;
+  }
+  .howClean {
+    position: relative;
+  }
+  .howClean__wrapper {
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    max-width: 1600px;
+    justify-content: space-between;
+  }
+  .howClean__leftSideText {
+    width: 30%;
+  }
+  .howClean__rightSideImages {
+    width: 40%;
+    height: 60vh;
+    margin-right: 10%;
+  }
+  .howClean__image {
+    height: 60vh;
+  }
+  .howClean__arrow {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    z-index: 100;
+  }
+  .howClean__circle {
+    display: block;
+    position: absolute;
+    right: 60%;
+    top: 70%;
+    z-index: 100;
+    animation: rotate180 3s infinite;
   }
 }
 @media screen and (min-width: 1600px) {
