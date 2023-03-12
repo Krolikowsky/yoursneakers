@@ -200,3 +200,48 @@
 
     &__textBox
         padding: $paddingElements
+
+.faq
+    background-color: $beige
+
+    &__box
+        border-bottom: 2px solid $black
+        padding: $paddingElements
+
+    &__arrow
+        display: none
+
+    &__question
+        display: flex
+        flex-direction: row
+        align-content: center
+        align-items: center
+        justify-content: space-between
+
+    &__paragraphQuestion
+        font-weight: 700
+        font-size: 2rem
+        line-height: 3rem
+
+    &__answer
+        max-height: 0
+        overflow: hidden
+        transition: 0.5s
+
+    &__icon
+        width: 30px
+        height: 30px
+        background-color: $blue
+        border-radius: 50%
+
+    &__image
+        width: 28px
+        height: 28px
+        transition: 0.5s
+
+    &__box.faq__active .faq__answer
+        max-height: 300px
+        padding-top: 20px
+
+    &__box.faq__active .faq__image
+        transform: rotate(180deg)
